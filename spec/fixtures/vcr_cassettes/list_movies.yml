@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-one-api.dev/v2/movie
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.7
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Authorization:
+      - Bearer 1wlzLG_csCXGeHE1OmlX
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=utf-8
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 20 Jun 2023 12:53:45 GMT
+      server:
+      - Apache/2.4.41 (Ubuntu)
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      x-dns-prefetch-control:
+      - 'off'
+      expect-ct:
+      - max-age=0
+      x-frame-options:
+      - SAMEORIGIN
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      x-download-options:
+      - noopen
+      x-content-type-options:
+      - nosniff
+      x-permitted-cross-domain-policies:
+      - none
+      referrer-policy:
+      - no-referrer
+      x-xss-protection:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+      x-ratelimit-limit:
+      - '100'
+      x-ratelimit-remaining:
+      - '51'
+      x-ratelimit-reset:
+      - '1687265833'
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '1847'
+      etag:
+      - W/"737-FtnbVAMtM2Np7AQquxcGvrlVqbI"
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"_id":"5cd95395de30eff6ebccde56","name":"The Lord of the
+        Rings Series","runtimeInMinutes":558,"budgetInMillions":281,"boxOfficeRevenueInMillions":2917,"academyAwardNominations":30,"academyAwardWins":17,"rottenTomatoesScore":94},{"_id":"5cd95395de30eff6ebccde57","name":"The
+        Hobbit Series","runtimeInMinutes":462,"budgetInMillions":675,"boxOfficeRevenueInMillions":2932,"academyAwardNominations":7,"academyAwardWins":1,"rottenTomatoesScore":66.33333333},{"_id":"5cd95395de30eff6ebccde58","name":"The
+        Unexpected Journey","runtimeInMinutes":169,"budgetInMillions":200,"boxOfficeRevenueInMillions":1021,"academyAwardNominations":3,"academyAwardWins":1,"rottenTomatoesScore":64},{"_id":"5cd95395de30eff6ebccde59","name":"The
+        Desolation of Smaug","runtimeInMinutes":161,"budgetInMillions":217,"boxOfficeRevenueInMillions":958.4,"academyAwardNominations":3,"academyAwardWins":0,"rottenTomatoesScore":75},{"_id":"5cd95395de30eff6ebccde5a","name":"The
+        Battle of the Five Armies","runtimeInMinutes":144,"budgetInMillions":250,"boxOfficeRevenueInMillions":956,"academyAwardNominations":1,"academyAwardWins":0,"rottenTomatoesScore":60},{"_id":"5cd95395de30eff6ebccde5b","name":"The
+        Two Towers","runtimeInMinutes":179,"budgetInMillions":94,"boxOfficeRevenueInMillions":926,"academyAwardNominations":6,"academyAwardWins":2,"rottenTomatoesScore":96},{"_id":"5cd95395de30eff6ebccde5c","name":"The
+        Fellowship of the Ring","runtimeInMinutes":178,"budgetInMillions":93,"boxOfficeRevenueInMillions":871.5,"academyAwardNominations":13,"academyAwardWins":4,"rottenTomatoesScore":91},{"_id":"5cd95395de30eff6ebccde5d","name":"The
+        Return of the King","runtimeInMinutes":201,"budgetInMillions":94,"boxOfficeRevenueInMillions":1120,"academyAwardNominations":11,"academyAwardWins":11,"rottenTomatoesScore":95}],"total":8,"limit":1000,"offset":0,"page":1,"pages":1}'
+  recorded_at: Tue, 20 Jun 2023 12:53:45 GMT
+recorded_with: VCR 6.1.0
