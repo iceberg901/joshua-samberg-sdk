@@ -80,7 +80,10 @@ end
 
 ### Currently Supported Root Level Endpoints/Operations
 
-+ `/movie` - list all movies, find a movie by id
+| Endpoint  | SDK Entry Point           | Operations                          |
+| --------- | ------------------------  | ----------------------------------- |
+| `/movie`  | `TheOneApi::Client.movie` | list all movies, find a movie by id |
+| `/quote`  | `TheOneApi::Client.quote` | list all quotes, find a quote by id |
 
 ### Currently Unsupported Features
 

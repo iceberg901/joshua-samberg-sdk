@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-one-api.dev/v2/quote/5cd96e05de30eff6ebcce80b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.7
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Authorization:
+      - Bearer 1wlzLG_csCXGeHE1OmlX
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=utf-8
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 20 Jun 2023 18:00:04 GMT
+      server:
+      - Apache/2.4.41 (Ubuntu)
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      x-dns-prefetch-control:
+      - 'off'
+      expect-ct:
+      - max-age=0
+      x-frame-options:
+      - SAMEORIGIN
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      x-download-options:
+      - noopen
+      x-content-type-options:
+      - nosniff
+      x-permitted-cross-domain-policies:
+      - none
+      referrer-policy:
+      - no-referrer
+      x-xss-protection:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+      x-ratelimit-limit:
+      - '100'
+      x-ratelimit-remaining:
+      - '94'
+      x-ratelimit-reset:
+      - '1687284433'
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '267'
+      etag:
+      - W/"10b-JN861sm6FW7DiGX/XOD+cNXVygE"
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"_id":"5cd96e05de30eff6ebcce80b","dialog":"Now come the days
+        of the King. May they be blessed.","movie":"5cd95395de30eff6ebccde5d","character":"5cd99d4bde30eff6ebccfea0","id":"5cd96e05de30eff6ebcce80b"}],"total":1,"limit":1000,"offset":0,"page":1,"pages":1}'
+  recorded_at: Tue, 20 Jun 2023 18:00:04 GMT
+recorded_with: VCR 6.1.0

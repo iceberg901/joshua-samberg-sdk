@@ -2,6 +2,7 @@
 
 require "the_one_api/resource_wrapper"
 require "the_one_api/resources/movie"
+require "the_one_api/resources/quote"
 
 module TheOneApi
   # A client for The One Api
@@ -19,6 +20,10 @@ module TheOneApi
 
     def movie
       @movie ||= ResourceWrapper.new(Movie, @api_key)
+    end
+
+    def quote
+      @quote ||= ResourceWrapper.new(Quote, @api_key)
     end
   end
 end
