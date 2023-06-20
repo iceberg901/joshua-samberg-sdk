@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    the_one_api (0.1.0)
+    the_one_api (0.2.0)
       flexirest (~> 1.11.1)
 
 GEM
