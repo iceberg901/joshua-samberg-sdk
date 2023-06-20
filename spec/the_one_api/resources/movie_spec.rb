@@ -6,15 +6,15 @@ require "the_one_api/resources/movie"
 RSpec.describe TheOneApi::Movie do
   let(:client) { TheOneApi::Client.new(ENV["THE_ONE_API_KEY"]) }
 
-  context "list all movies" do
-    it "lists movies", vcr: { cassette_name: "list_movies" } do
+  context "list all movies", vcr: { cassette_name: "list_movies" } do
+    it "lists movies" do
       results = client.movie.list
 
       expect(results).to_not be_empty
       expect(results).to all(be_an_instance_of(TheOneApi::Movie))
     end
 
-    it "makes properties available as methods with camel case names", vcr: { cassette_name: "list_movies" } do
+    it "makes properties available as methods with camel case names" do
       results = client.movie.list
 
       expect(results[0].runtime_in_minutes).to be_an(Integer)

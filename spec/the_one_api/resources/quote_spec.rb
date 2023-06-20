@@ -6,15 +6,15 @@ require "the_one_api/resources/quote"
 RSpec.describe TheOneApi::Quote do
   let(:client) { TheOneApi::Client.new(ENV["THE_ONE_API_KEY"]) }
 
-  context "list all quotes" do
-    it "lists quotes", vcr: { cassette_name: "list_quotes" } do
+  context "list all quotes", vcr: { cassette_name: "list_quotes" } do
+    it "lists quotes" do
       results = client.quote.list
 
       expect(results).to_not be_empty
       expect(results).to all(be_an_instance_of(TheOneApi::Quote))
     end
 
-    it "makes properties available as methods", vcr: { cassette_name: "list_quotes" } do
+    it "makes properties available as methods" do
       results = client.quote.list
 
       expect(results[0].dialog).to be_a(String)
@@ -39,6 +39,21 @@ RSpec.describe TheOneApi::Quote do
         expect(error.status).not_to eq(400)
         expect(error.message).to eq("Something went wrong.")
       end
+    end
+  end
+
+  context "list quotes for a movie", vcr: { cassette_name: "list_quotes_for_movie" } do
+    it "lists quotes" do
+      results = client.quote.list_for_movie("5cd95395de30eff6ebccde5b")
+
+      expect(results).to_not be_empty
+      expect(results).to all(be_an_instance_of(TheOneApi::Quote))
+    end
+
+    it "makes properties available as methods" do
+      results = client.quote.list_for_movie("5cd95395de30eff6ebccde5b")
+
+      expect(results[0].dialog).to be_a(String)
     end
   end
 end
